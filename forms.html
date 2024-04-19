@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+<style>
+    body {
+        background-image: url('fon.jpg');
+    }
+    .fg {
+        width: 400px;
+        margin-left: 40%;
+        margin-right: 40%;
+        background-color: rgb(33, 191, 219);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style>
+<body>
+    <div class="fg">
+        <form>
+            <p>Name:<input name="Name"></p>
+            <p>Surname:<input name="Surname"></p>
+            <p>Middle name:<input name="Middle name"></p>
+            <p>Email:<input type="email" name="Email"></p>
+            <p>Password:<input type="password" name="Password"></p>
+
+            <p>Country:<select>
+                <option value="russia">Russia</option>
+                <option value="USA">USA</option>
+                <option value="china">China</option>
+                <option value="india">India</option>
+                <option value="canada">Canada</option>
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+                <option value="spain">Spain</option>
+                <option value="poland">Poland</option>
+                <option value="japan">Japan</option>
+            </select></p>
+
+            <p><b>Locality: </b></p>
+            <p><input type="radio" name="Locality" value="Capital">Capital</p>
+            <p><input type="radio" name="Locality" value="City">City</p>
+            <p><input type="radio" name="Locality" value="Town">Town</p>
+            <p><input type="radio" name="Locality" value="Village">Village</p>
+            <p><input type="radio" name="Locality" value="Farm">Farm</p>
+
+            <p><b>Language:</b></p>
+            <p><input type="checkbox" name="Language" value="English" checked>English</p>
+            <p><input type="checkbox" name="Language" value="Russian">Russian</p>
+            <p><input type="checkbox" name="Language" value="Spanish">Spanish</p>
+            <p><input type="checkbox" name="Language" value="French">French</p>
+            <p><input type="checkbox" name="Language" value="Indian">Indian</p>
+
+            <p><select multiple>
+                <option value="PythonProgrammer">Python programmer</option>
+                <option value="ComputerEngineer">Computer engineer</option>
+                <option value="SystemAdministrator">System Administrator</option>
+                <option value="OSDeveloper">OS Developer</option>
+                <option value="Wed-designer">Wed-designer</option>
+                <option value="Wed-programmer">Wed-programmer</option>
+                <option value="CCPPProgrammer">C/CPP programmer</option>
+                <option value="RubyProgrammer">Ruby programmer</option>
+                <option value="ECMaCMOperator">ECM and CM operator</option>
+                <option value="DataAnalyser">Data analyser</option>
+            </select></p>
+            
+            <p>Additional Information</p>
+            <p><textarea name="AddInfo" cols="24" rows="10"></textarea></p>
+            <p student="Семендяев Илья" hidden></p>
+
+            <p><input type="submit" name="subm" value="Submit"></p>
+            <p><input type="reset" name="clr" value="Clear form"></p>
+        </form>  
+    </div>
+    
+</body>
+</html>
